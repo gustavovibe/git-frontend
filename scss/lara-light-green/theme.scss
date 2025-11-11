@@ -1,0 +1,14 @@
+$primaryColor: #82cf45 !default;         // A vibrant lime green
+$primaryLightColor: #d3f3b8 !default;    // A soft tint for lighter UI elements
+$primaryDarkColor: #66a73a !default;     // Slightly darker version for hover states
+$primaryDarkerColor: #4b7e2c !default;   // Deep tone for emphasis/borders
+$primaryTextColor: #ffffff !default;     // Text on primary background
+
+$highlightBg: #f6fdf0 !default;          
+$highlightTextColor: $primaryDarkerColor !default;
+$highlightFocusBg: rgba($primaryColor, .24) !default;
+
+@import '../_variables';
+@import './_fonts';
+@import '../theme-base/_components';
+@import '../_extensions';

@@ -1,0 +1,276 @@
+.filter-title {
+  color: var(--Gray-1, #333);
+  font-family: Canaro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 8px;
+}
+.p-accordion-header a{
+	    padding: 0 !important;
+}
+.discount-button{
+	color: #FF0E0E;
+    margin-top: 4px;
+    padding: 4.5958px 17.979px;
+    border: 1.2px dashed #FF0E0E;
+    border-radius: 12px;
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link{
+  border-width: 0 0 5px 0;
+}
+h1 {
+  font-family: "Canaro", sans-serif;
+  font-size: 3rem;
+}
+
+* {
+  font-family:
+      "Canaro";
+}
+hr{
+  color: gray;
+  border-width: 0.1px;
+}
+
+.interstate {
+  font-family: "Interstate";
+}
+
+.green-vibe {
+  color:
+      #82cf45;
+}
+
+.orange-vibe {
+  background-color: #FF6C0E;
+}
+
+div.col-6.flex.align-items-center {
+  padding: 4px;
+}
+.travel-guide-img{
+  background-size:cover;
+  background-position: center;
+  height: 100%;
+  margin: 0 auto 10px auto;
+  position: relative;
+}
+.gallery-text{
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+.gallery-text .author-link{
+  color: #4CAF50;
+  text-decoration: none;
+  margin-left: 0.2rem;
+}
+@media only screen and (max-width:767px) {#main-grid{margin: 0px 0px 20px 0px;padding: 0 2%;}.map-card{width: 85%;}}
+
+@media only screen and (min-width:768px) and (max-width:1199px) {#main-grid{margin: 0px 0px 20px 0px;padding: 0 5%;}}
+
+@media only screen and (min-width:1200px) {#main-grid{margin: 0px 0px 20px 0px;padding: 0 5%;}}
+
+
+:deep(.p-tabmenu-nav){
+  justify-content: center;
+}
+:deep(span.p-menuitem-text){
+  font-weight: 500;
+}
+:deep(.p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link){
+  color: #82cf45;
+  border-color: #82cf45;
+}
+.map{
+  height: 400px;
+  width: 100%;
+  border-radius: 1rem !important;
+}
+
+/* Mantener todos los otros estilos originales existentes... */
+.map {
+  height: 100%;
+  width: 100%;
+  min-height: 300px; /* Añadido */
+}
+.map-card{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.image-slider-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  margin:0 auto;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.nav-button {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  color: white !important;
+  border: none !important;
+  transition: background-color 0.2s ease;
+}
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.info-area {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.info-content {
+  background-color: transparent;
+  padding: 0.5rem;
+  display: block;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  border-radius: 15px;
+}
+
+.info-content .author-link {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-width 0.4s ease-out, opacity 0.3s ease-out 0.1s;
+  white-space: nowrap;
+  color: white;
+  text-decoration: none;
+  margin-right: 0;
+}
+
+.info-content:hover .author-link {
+  max-width: 200px;
+  opacity: 1;
+  margin-right: 0.5rem;
+}
+
+.info-content:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.info-content .pi-info-circle {
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.dots-indicator {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 0.5rem;
+}
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.dot.bg-white {
+  background-color: white;
+}
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.next-button{
+  right:30px!important;
+}
+.prev-button{
+  left:30px!important;
+}
+.tg_video_iframe{
+  margin:0 auto;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.map-image {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+.view-map-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #fff;
+  color: #82cf45;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.enlarged-map {
+  max-width: 90%;
+  display: block;
+  margin: auto;
+}
+.description-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limits text to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* This adds the ellipsis if text overflows, but might not work perfectly with line-clamp in all browsers for dynamic truncation */
+}
+
+/* You might need this to initially hide the read more trigger until JS shows it */
+.read-more-trigger {
+  height: 0;
+  overflow: hidden;
+}
+
+/* This class would be added by JavaScript if the text is truncated */
+.read-more-trigger.show {
+  visibility: visible;
+  height: auto; /* Or whatever height you need for the trigger */
+  overflow: visible;
+}
+
+.pi{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.top-40{
+	top:40%;
+}
+.pi.pi-heart{
+  color: #82cf45;
+}
+.pi-heart-fill{
+  color:#EF4444;
+}
+.badge-bs{
+  background-color: rgba(130, 207, 69, 0.2);
+}
+
+.badge-gv{
+  background-color: rgba(255, 108, 14, 0.2);
+}

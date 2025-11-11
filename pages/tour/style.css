@@ -1,0 +1,606 @@
+.expand-enter-active,
+.expand-leave-active {
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.expand-enter-from,
+.expand-leave-to {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+.expand-enter-to,
+.expand-leave-from {
+  max-height: 500px; /* un valor suficiente para cubrir el contenido */
+  opacity: 1;
+  transform: translateY(0);
+}
+.p-dialog-content {
+  padding: 40px !important;
+}
+.active-heart {
+  filter: brightness(0) saturate(100%) invert(36%) sepia(99%) saturate(442%)
+    hue-rotate(345deg) brightness(99%) contrast(101%);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.itinerary .p-accordion-content {
+  margin-left: 15px !important;
+}
+
+.itinerary .p-accordion-header a {
+  padding: 20px 0px !important;
+}
+
+.inclusionss .p-accordion-header a {
+  padding: 20px 0px !important;
+}
+
+.inclusionss,
+.inclusions,
+.exclusionss {
+  display: block;
+}
+
+.p-avatar.p-avatar-image {
+  background: #82cf45;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.exclusions-desc br {
+  display: none !important;
+}
+
+.exclusions-desc p {
+  margin: 0 !important;
+}
+
+.inclusions-header {
+  display: flex;
+  color: #82cf45;
+  font-family: Canaro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  /* 138.889% */
+}
+
+.inclusions-desc,
+.exclusions-desc {
+  margin-left: 15px;
+}
+
+.inclusions-desc ul {
+  list-style-image: url(~/assets/icons/inclussion.svg);
+}
+
+@font-face {
+  font-family: "Canaro";
+  src: url(~/assets/fonts/canaro-l.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Interstate";
+  src: url(/fonts/Interstate-regular.ttf);
+  font-weight: 100 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .mobile-inverted {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #main-container {
+    padding: 0 2%;
+		margin-top: 6em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .map-container {
+    margin-top: -70px;
+  }
+  #main-container {
+    padding: 0 5%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .map-container {
+    margin-top: -70px;
+  }
+  #main-container {
+    padding: 5rem 10rem;
+  }
+}
+
+h1.tour-heading {
+  font-size: 40px;
+  color: black;
+  font-weight: 600;
+}
+
+.hide {
+  display: none;
+}
+
+.rating {
+  background-color: #82cf45;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.2rem 0.3rem;
+  border-radius: 8px;
+}
+
+.green {
+  color: #82cf45;
+}
+
+.tour-inf-img {
+  height: 30rem;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #82cf45;
+}
+
+.per-day {
+  font-size: 0.8rem;
+}
+
+.btn-cover {
+  width: -webkit-fill-available;
+  border: 1px solid #ff6c0e;
+  border-radius: 8px;
+  font-weight: 700;
+  font-family: "Interstate";
+  font-size: 1.1rem;
+}
+
+.cat {
+  color: black;
+  background-color: #f3f3f3;
+  padding: 0.3rem 0.8rem;
+  border-radius: 16px;
+}
+
+.specs {
+  /* font-weight: 500; */
+  color: var(--gray-500);
+  font-size: 1rem;
+  margin: 0;
+  font-style: bold;
+}
+
+.details {
+  /* font-weight: 600; */
+  color: var(--gray-900);
+}
+
+.content h2 {
+  color: #82cf45;
+  font-size: 1.3rem;
+  font-family: "Canaro", sans-serif;
+}
+
+.content p,
+.content li {
+  font-family: "Interstate", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tour-hr {
+  height: 1px;
+  border: none;
+  background-color: var(--gray-300);
+}
+
+.p-tabmenu-nav {
+  justify-content: center;
+}
+
+.availability_pricing {
+  text-align: center;
+  color: #82cf45;
+  font-size: 24px;
+  font-family: "Canaro", sans-serif;
+}
+
+.card_calendar {
+  display: flex;
+  justify-content: center;
+}
+
+.day_element {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+
+.day_element_selected {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  background-color: rgba(130, 207, 69, 0.2);
+}
+
+.day_element:hover {
+  background: transparent;
+}
+
+.date_number:hover {
+  background: transparent;
+}
+
+.date_number {
+  pointer-events: none;
+  font-size: 20px;
+}
+
+.date_number_with_price {
+  font-size: 20px;
+  /* text-decoration: underline;
+  text-decoration-color: #82CF45; */
+  cursor: pointer;
+}
+
+.date_number_with_price:hover {
+  background: transparent;
+}
+
+.calendarRootClass {
+  width: 100%;
+  height: 100%;
+}
+
+.calendar-container {
+  width: 70vw;
+}
+
+.footer-calendar {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.footer-set-dates-button {
+  background-color: #82cf45;
+  color: white;
+  padding: 14px 16px 14px 16px;
+  border-radius: 8px;
+  margin-left: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-cancel-button {
+  padding: 14px 16px 14px 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.calendar-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.calendarHeaderClass {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.departure-calendar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10.75px 12px 10.75px 12px;
+  background-color: rgba(130, 207, 69, 0.2);
+  border-radius: 8px;
+  border: 1px solid #82cf45;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.departure-input-class {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.departure-input-class:focus {
+  outline: none;
+}
+
+.note_prices_in_calendar {
+  text-align: justify;
+  font-family: "interstate";
+
+}
+
+.text-green {
+  color: #82cf45;
+}
+
+.calendardayLabelClass {
+  /* cursor: default; */
+}
+
+.length_days_class {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.font_family_canaro {
+  font-family: "Canaro";
+}
+
+.text_decoration_none {
+  text-decoration: none;
+}
+
+.see_dates_and_prices {
+  background-color: #ff6c0e;
+  color: #fff;
+  cursor: pointer;
+}
+
+.make_an_enquiry {
+  background-color: unset;
+  color: black;
+}
+
+.calendar-shadow {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(37, 42, 49, 0.16),
+    0px 8px 24px 0px rgba(37, 42, 49, 0.24);
+}
+
+.red {
+  background-color: red;
+}
+/** calendar rebuild */
+.month-selection {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.month-selection .month-departure{
+  background-color: white;
+  color: #000;
+  border: 1px solid #82cf45;
+  padding:0.75rem
+}
+.month-selection .selected {
+  background-color: #82cf45;
+  color: white;
+  border: 1px solid #82cf45;
+}
+
+.departure-dates {
+  font-family: interstate !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.departure-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #82cf45;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(40, 40, 40, 0.2);
+}
+
+.departure-price {
+  font-family: interstate !important;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.confirm-dates-btn{
+  background-color: #82cf45;
+  color: white;
+  border: 1px solid #82cf45;
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+/* Discount Badge */
+.discount-badge {
+  background-color: #e63946;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 12px;
+  position: absolute;
+  top: -12px;
+  right: 16px;
+}
+
+/* Departure Info */
+.departure-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.departure-date strong {
+  font-family: interstate !important;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.departure-date span {
+  font-family: interstate !important;
+  font-size: 14px;
+  color: #555;
+}
+
+.arrow-icon {
+  font-size: 26px;
+  color: #555;
+}
+
+/* Price Section */
+.departure-price {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.original-price {
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: line-through;
+}
+
+.departure-text {
+  font-family: interstate !important;
+  font-size: 14px;
+  color: #333;
+}
+.discount-button{
+  color: #FF0E0E;
+    margin-top: 4px;
+    padding: 4.5958px 17.979px;
+    border: 1.2px dashed #FF0E0E;
+    border-radius: 12px;
+  width: fit-content;
+  margin-left:5px;
+}
+.d-none{
+  display: none !important;
+}
+.image-container {
+  position: relative;
+  width: 85%;
+  display: inline-block;
+}
+
+.map-image {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+.view-map-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  color: #82cf45;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.enlarged-map {
+  width: 250%;
+  max-width: 900px;
+  display: block;
+  margin: auto;
+}
+.itinerary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding:0 1.25rem
+}
+.expand-btn {
+  cursor: pointer;
+  font-size: 14px;
+  color: #82cf45;
+  text-decoration: underline;
+}
+.tab-header-text {
+    font-weight: 500 !important;
+}
+@media only screen and (max-width: 768px) {
+  .departure-dates .flex.text-sm {
+    display: none !important;
+  }
+
+  .departure-dates .border-bottom-1 {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem;
+    padding: 1rem !important;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+  }
+
+  .departure-info,
+  .departure-price {
+    width: 100% !important;
+    text-align: left !important;
+    padding: 0 !important;
+  }
+
+  .departure-info > div,
+  .departure-price > span {
+    font-size: 14px !important;
+  }
+
+  .departure-price:last-child {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+  }
+
+  .confirm-dates-btn {
+    width: 100% !important;
+    font-size: 1rem !important;
+    padding: 0.75rem !important;
+  }
+}
+.p-dropdown-item-group {
+  background-color: rgba(130, 207, 69, 0.2) !important;
+}
+.p-highlight {
+  background-color: rgba(130, 207, 69, 0.05)  !important;
+}
+.p-dialog-header {
+  padding-bottom: 0 !important;
+}
