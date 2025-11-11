@@ -1,4 +1,18 @@
 export default defineNuxtConfig({
+  // AÑADIR ESTO: Configura el motor Nitro
+  nitro: {
+    // Asegura que usa el preset de Node.js, perfecto para contenedores
+    preset: 'node-server', 
+    serveStatic: true, // Si usas alguna ruta estática
+  },
+
+  // AÑADIR ESTO: Configura el servidor a nivel de Nuxt
+  server: {
+    // Estas configuraciones generalmente son para desarrollo,
+    // pero pueden actuar como fallback en el servidor si no hay env vars.
+    host: '0.0.0.0', 
+    port: 8080
+  },
   app: {
     head: {
       title: "Vibe Adventures",

@@ -26,5 +26,4 @@ ENV HOST=0.0.0.0
 EXPOSE 8080
 
 # 8. Define the command to run your app
-# This is the same as the "start" script in Option 1
-CMD ["node", ".output/server/index.mjs"]
+CMD [ "node", ".output/server/index.mjs", "--host", "0.0.0.0", "--port", "8080" ]
