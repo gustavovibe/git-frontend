@@ -89,7 +89,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       // Don't forget prefix "NUXT_PUBLIC_"
-      FRONTEND_URL: process.env.NUXT_PUBLIC_FRONTEND_URL || "https://travelpackages.vibeadventures.com",
+      FRONTEND_URL: process.env.NUXT_PUBLIC_FRONTEND_URL || "https://packages-frontend-167487643212.us-east4.run.app",
       BACKEND_URL: process.env.NUXT_PUBLIC_BACKEND_URL || "https://vibeadventures.be",
       KIWIAPI_URL: process.env.NUXT_PUBLIC_KIWIAPI_URL || "https://api.tequila.kiwi.com",
       KIWIAPI_KEY: process.env.NUXT_PUBLIC_KIWIAPI_KEY || "QGWd943iYcYa581oo0nm_m8Kl-BOL0an",
